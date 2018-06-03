@@ -1,3 +1,10 @@
 pipeline:
   build:
     image: sharad23/drone-flask
+services:
+  web:
+    image: sharad23/drone-flask
+    ports:
+    - "5000:5000"
+    
+    
